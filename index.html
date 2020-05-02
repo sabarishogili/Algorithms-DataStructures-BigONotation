@@ -50,7 +50,7 @@
                   class="responsnav-descriptionsive-hide">algorithms</span></a></li>
 
             <li><a
-               href="https://github.com/sabarishogili/algortihms-datastructures"
+               href="https://github.com/sabarishogili/Algorithms-DataStructures-BigONotation"
                target="_blank"><img class="aside-icons"
                   src="images/icons/github.svg"
                   onerror="this.onerror=null; this.src='image.svg'"><span
@@ -62,16 +62,16 @@
          <ul id="share-list">
 
             <li><a
-               href="https://www.facebook.com/sharer/sharer.php?u=http://sabarishogili.github.io/algortihms-datastructures/index.html"><img
+               href="https://www.facebook.com/sharer/sharer.php?u=http://sabarishogili.github.io/Algorithms-DataStructures-BigONotation/index.html"><img
                   class="share-buttons" src="images/icons/FB-share.svg"
                   onerror="this.onerror=null; this.src='image.svg'"></a></li>
             <li><a
-               href="https://twitter.com/home?status=Check%20this%20website%20with%20%20cheatsheets%20for%20data%20structures%20and%20algorithms%20http://sabarishogili.github.io/algortihms-datastructures/index.html"><img
+               href="https://twitter.com/home?status=Check%20this%20website%20with%20%20cheatsheets%20for%20data%20structures%20and%20algorithms%20http://sabarishogili.github.io/Algorithms-DataStructures-BigONotation/index.html"><img
                   class="share-buttons"
                   src="images/icons/twitter-share.svg"
                   onerror="this.onerror=null; this.src='image.svg'"></a></li>
             <li><a
-               href="https://plus.google.com/share?url=http://sabarishogili.github.io/algortihms-datastructures/index.html"><img
+               href="https://plus.google.com/share?url=http://sabarishogili.github.io/Algorithms-DataStructures-BigONotation/index.html"><img
                   class="share-buttons"
                   src="images/icons/google-plus-share.svg"
                   onerror="this.onerror=null; this.src='image.svg'"></a></li>
@@ -88,7 +88,7 @@
       you discover errors in the code or typos I haven't noticed <a
          href="https://github.com/sabarishogili">please let me know</a> or
       feel free to contribute by clicking this <a
-         href="https://github.com/sabarishogili/algortihms-datastructures">Github
+         href="https://github.com/sabarishogili/Algorithms-DataStructures-BigONotation">Github
          link <img id="top-github" src="images/icons/github.svg"
          onerror="this.onerror=null; this.src='image.svg'">
       </a>, fork the project and make a pull request :)
@@ -126,7 +126,24 @@
                   data-text="5"  === O(n^2)
         -->
 
-
+         <table id="scale-table">
+            <caption class="table-titles">Big O notation scale</caption>
+            <tr>
+               <td class="scale greenest">O(1) </td> <td class="symbol"><</td>
+               <td class="scale greenest">O(k) </td> <td class="symbol"><</td>
+               <td class="scale green">O(log log n) </td> <td class="symbol">< </td>
+               <td class="scale green">O(log n) </td> <td class="symbol"><</td>
+               <td class="scale yellow">O(n) </td> <td class="symbol"><</td>
+               <td class="scale yellow">O(n+k) </td> <td class="symbol"><</td>
+               <td class="scale yellow">O(n+2<sep>d</sep>) </td> <td class="symbol"><</td>
+               <td class="scale yellow">O(nk) </td> <td class="symbol"><</td>
+               <td class="scale orange">O(n log n) </td> <td class="symbol"><</td>
+               <td class="scale red">O(n<sup>2</sup>) </td> <td class="symbol"><</td>
+               <td class="scale red">O(n<sup>c</sup>) </td> <td class="symbol"><</td>
+               <td class="scale red">O(c<sup>n</sup>) </td> <td class="symbol"><</td>
+               <td class="scale red">O(n!)</td>
+            </tr>
+         </table>
 
       <table id="sorting-table" class="tablesorter">
          <caption class="table-titles">Sorting Algorithms</caption>
@@ -208,7 +225,7 @@
 
             <tr>
 
-               <td class="first-column">Mergesort</td>
+               <td class="first-column">Merge Sort</td>
                <td data-text="3" class="yellow">O(n)</td>
 
                <td data-text="4" class="orange">O(n log n)</td>
@@ -219,7 +236,7 @@
 
             <tr>
 
-               <td class="first-column">Quicksort</td>
+               <td class="first-column">Quick Sort</td>
                <td data-text="2" class="green">O(log n)</td>
 
                <td data-text="4" class="orange">O(n log n)</td>
@@ -229,12 +246,48 @@
             </tr>
 
             <tr>
-               <td class="first-column">Heapsort</td>
+               <td class="first-column">Heap sort</td>
                <td data-text="1" class="greenest">O(1)</td>
 
                <td data-text="4" class="orange">O(n log n)</td>
                <td data-text="4" class="orange">O(n log n)</td>
                <td data-text="4" class="orange">O(n log n)</td>
+            </tr>
+
+            <tr>
+               <td class="first-column">Bucket Sort</td>
+               <td data-text="1" class="greenest">O(1)</td>
+
+               <td data-text="4" class="yellow">O(n+k)</td>
+               <td data-text="4" class="yellow">O(n+k)</td>
+               <td data-text="4" class="red">O(n<sup>2</sup>)</td>
+            </tr>
+
+            <tr>
+               <td class="first-column">Counting Sort</td>
+               <td data-text="1" class="greenest">O(k)</td>
+
+               <td data-text="4" class="yellow">O(n+k)</td>
+               <td data-text="4" class="yellow">O(n+k)</td>
+               <td data-text="4" class="yellow">O(n+k)</td>
+            </tr>
+
+            <tr>
+               <td class="first-column">Tree Sort</td>
+               <td data-text="1" class="yellow">O(n)</td>
+
+               <td data-text="4" class="orange">O(n log n)</td>
+               <td data-text="4" class="orange">O(n log n)</td>
+               <td data-text="4" class="red">O(n<sup>2</sup>)</td>
+            </tr>
+
+            <tr>
+               <td class="first-column">Radix Sort</td>
+               <td data-text="1" class="yellow">O(n+2<sep>d</sep>)</td>
+
+               <td data-text="4" class="yellow">O(nk)</td>
+               <td data-text="4" class="yellow">O(nk)</td>
+               <td data-text="4" class="yellow">O(nk)</td>
             </tr>
 
 
