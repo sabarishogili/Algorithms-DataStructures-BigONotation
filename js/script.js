@@ -26,8 +26,8 @@ $(function() {
 	$("#sorting-table").tablesorter();
 });
 
-$(".sort-table").tablesorter({
-	textExtraction : function(node) {
+$(".sort-table").on("tablesorter", function(node){
+	textExtraction : function t(node) {
 		var attr = $(node).attr('data-sort-value');
 		if (typeof attr !== 'undefined' && attr !== false) {
 			return attr;
